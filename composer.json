@@ -19,5 +19,15 @@
     "irc": "irc://irc.freenode.org/drupal-contribute",
     "source": "http://cgit.drupalcode.org/constant_contact"
   },
-  "require": { }
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/dakala/php-sdk"
+    }
+  ],
+  "require": {
+    "constantcontact/constantcontact": "dev-development",
+    "drupal/address": "1.1",
+    "drupal/profile": "1.0-beta1"
+  }
 }

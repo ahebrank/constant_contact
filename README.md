@@ -1,4 +1,4 @@
-# Constact Contact - Drupal 8
+# Constant Contact - Drupal 8
 
 __Note:__ This is a development version and the management of the dependencies hasn't been determined yet. If you'd like to see what it does, __try it in a local sandbox__. A number of things may change.
 
@@ -9,24 +9,17 @@ __Dependencies:__
 
 __Steps:__
 
-- Edit the composer.json in your Drupal site root:
+- Edit the composer.json in your Drupal site root to add a custom source:
 
-  ```javascript
-  "require": {
-      ...
-      "constantcontact/constantcontact": "dev-development",
-      ...
-  },
-  ...
-  ,
+  ```json
   "repositories": [
       {
           "type": "vcs",
-          "url": "https://github.com/dakala/php-sdk.git"
+          "url": "https://github.com/dakala/constant_contact"
       }
   ],
   ...
   ```
 
-- Run composer update
-- Get the module from https://github.com/dakala/constant_contact and install.
+- Run `composer require drupal/constant_contact:dev-master`
+
